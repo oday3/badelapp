@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "51730743927",
+    "project_id": "badl-57171",
+    "storage_bucket": "badl-57171.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51730743927:android:fb983680d119368f1cbc72",
+        "android_client_info": {
+          "package_name": "com.badl.apps.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMCnmVFVR_IfubYkrCrxmynxID_gf1KHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

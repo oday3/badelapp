@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appFeatures.userAccount.ui.UserRatingsActivity">
+
+
+    <include
+        android:id="@+id/toolbar_userRatingsActivity"
+        layout="@layout/toolbar_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/main_app_color"
+        app:layout_constraintTop_toTopOf="@id/tabLayout_userRatings"
+        app:layout_constraintBottom_toBottomOf="@id/tabLayout_userRatings"
+        />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_userRatings"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_tablayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/secondary_app_color"
+        app:tabIndicatorHeight="3dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_userRatingsActivity"
+        app:tabPaddingBottom="8dp"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/montserrat_medium_14"
+        app:tabTextColor="@color/ube" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout_userRatings" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

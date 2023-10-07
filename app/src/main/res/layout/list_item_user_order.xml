@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="24dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img_orderItem_productImg"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/prod_1"
+        app:shapeAppearanceOverlay="@style/RoundedSquare_16"
+        />
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:id="@+id/tv_orderItem_productName"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/montserrat_regular_13"
+        android:textColor="@color/rich_black"
+        android:maxLines="2"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="15dp"
+        android:ellipsize="end"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_orderItem_productImg"
+        app:layout_constraintStart_toEndOf="@id/img_orderItem_productImg"
+        tools:text="أيفون 13 بروماكس بحالة ممتازة جدا مع كامل الملحقات الاصلية"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:id="@+id/tv_orderItem_desc"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/montserrat_light_12"
+        android:textColor="@color/auro_metal_saurus"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_orderItem_productName"
+        app:layout_constraintStart_toStartOf="@id/tv_orderItem_productName"
+        tools:text="مايو 16، 8:00 مساءً"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cons_offerProduct"
+    app:layout_constraintTop_toBottomOf="@id/tv_offerDetailsLabel"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear_charityOfferListItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_charityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="هنا اسم الجمعية"
+            android:textAppearance="@style/montserrat_medium_13"
+            android:textColor="@color/rich_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_productSectionItem_productImg"
+            app:layout_constraintTop_toTopOf="@id/img_productSectionItem_productImg" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="مايو 9، 2023"
+            android:textAppearance="@style/montserrat_regular_12"
+            android:textColor="@color/auro_metal_saurus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_productSectionItem_productName"
+            app:layout_constraintTop_toBottomOf="@id/tv_productSectionItem_productName" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/linear_charityOfferListItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/linear_orderActions"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_rejectOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reject"
+            android:padding="6dp"
+            android:layout_marginEnd="14dp"
+            android:textAppearance="@style/montserrat_semi_bold_12"
+            android:background="@drawable/bg_reject_order"
+            android:textColor="@color/cg_red"
+            android:drawableStart="@drawable/ic_reject_order"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_acceptOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accept"
+            android:padding="6dp"
+            android:textAppearance="@style/montserrat_semi_bold_12"
+            android:background="@drawable/bg_show_all"
+            android:drawablePadding="3dp"
+            android:textColor="@color/green"
+            android:drawableStart="@drawable/ic_accept_order"
+
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_dash"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/alice_blue"
+        app:layout_constraintTop_toBottomOf="@id/linear_charityOfferListItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,307 @@
+<resources>
+    <string name="app_name">Badl</string>
+
+    <string name="holder_price">%1$s S.R</string>
+
+    <string name="this_field_required">This field is required</string>
+
+    <string name="password_must_contain_at_least_8_digits">Password must be at least 8 digits</string>
+
+    <string name="enter_valid_email">Please enter a correct email</string>
+
+    <string name="password_dont_match">Passwords do not match</string>
+
+    <string name="enter_valid_mobile">Mobile No. must be between 9 to 10 digits</string>
+
+    <string name="enter_valid_mobile_intro">Mobile No. must start with 5</string>
+
+    <string name="enter_valid_mobile_length">Mobile No. must contain 9 digits</string>
+
+    <string name="enter_valid_tax_num_length">Tax No. must contain 15 digits</string>
+
+    <string name="tax_num_must_start_3">Tax No. must start and end with number 3</string>
+    <string name="login">Login</string>
+    <string name="welcome_back_again">Welcome back again.</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+
+
+    <string name="cancel">Cancel</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="choose_image_source">Choose image source</string>
+    <string name="done">Done!</string>
+    <string name="new_account">New account</string>
+
+    <string name="login_to_your_account">Login to your account</string>
+
+    <string name="email">Email</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    <string name="please_enter_password">Please enter password</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="facebook_app_id" translatable="false">583664897014753</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb583664897014753</string>
+    <string name="facebook_client_token" translatable="false">4d1514c9f741b811c5bbbe036540de1c</string>
+
+    <string name="please_enter_emails_address">Please enter email address</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter">Enter</string>
+
+
+    <string name="dont_have_account_label">Dont have account ?</string>
+    <string name="have_an_account">Have an account?</string>
+
+    <string name="create_new_account_label">New accountً</string>
+    <string name="or">Or</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_with_facebook">Login with facebook</string>
+    <string name="login_with_twitter">Login with twitter</string>
+    <string name="login_with_linked_in">Login with linked in</string>
+    <string name="register_your_account">Register your account</string>
+    <string name="welcome_fill_in_the_following_data">Welcome, fill in the following data:</string>
+    <string name="name_req">Name *</string>
+    <string name="email_req">Email *</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="mobile_number_req">Mobile number *</string>
+    <string name="password_req">Password *</string>
+    <string name="register">Register</string>
+    <string name="confirm_password_req">Confirm password *</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="forgot_password_2">Forgot password</string>
+    <string name="please_enter_your_account_username_and_email_address">Please enter your account email address</string>
+    <string name="user_name_req">User name *</string>
+    <string name="reset_password">Reset password</string>
+    <string name="update_password">Update password</string>
+    <string name="please_enter_the_new_password_and_confirm_it">Please enter the new password and \n confirm it</string>
+    <string name="home">Home</string>
+    <string name="sections">Sections</string>
+    <string name="bidding">Bidding</string>
+    <string name="profile">Profile</string>
+    <string name="get_out_off_app_msg">Click back again to get out of the app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="on_my_radar">On my radar</string>
+    <string name="profile_2">Profile</string>
+    <string name="search_here">Search here</string>
+    <string name="show_all">Show all</string>
+    <string name="numerous_views_on_this_product">Numerous views on this product</string>
+    <string name="main_details">Main details</string>
+    <string name="status">Status</string>
+    <string name="choose_product_status">Choose product status</string>
+    <string name="ad_name">Ad name</string>
+    <string name="enter_ad_name">Enter ad name</string>
+    <string name="purchase_price">Purchase price</string>
+    <string name="_1000_sar">1000 SAR</string>
+    <string name="duration_of_advertising_days">Duration of advertising days</string>
+    <string name="auto_republish">Auto Republish</string>
+    <string name="choose_the_number_of_auto_republish">Choose the number of auto republish</string>
+    <string name="ad_type">Ad type</string>
+    <string name="choose_ad_type">Choose ad type</string>
+    <string name="continue_txt">Continue</string>
+    <string name="product_details">Product details</string>
+    <string name="section">Section</string>
+    <string name="choose_section">Choose section</string>
+    <string name="description">Description</string>
+    <string name="enter_ad_description">Enter ad description</string>
+    <string name="product_mages">Product mages</string>
+    <string name="_5_photos_max">5 photos max</string>
+    <string name="choose_image">Choose image</string>
+    <string name="new_ad">New Ad</string>
+    <string name="publish">Publish</string>
+    <string name="trusted_seller">Trusted seller</string>
+    <string name="for_bidding">For bidding</string>
+    <string name="for_swap">For swap</string>
+    <string name="for_sell">For sell</string>
+    <string name="details">Details</string>
+    <string name="sub_section">Sub section</string>
+    <string name="end_date">End Date</string>
+    <string name="location">Location</string>
+    <string name="release_date">Release date</string>
+    <string name="about_seller">About seller</string>
+    <string name="bid_now">Bid now</string>
+    <string name="swap">Swap</string>
+    <string name="buy">Buy</string>
+    <string name="bid">Bid</string>
+    <string name="next_bidding">Next bidding</string>
+    <string name="bidding_product">Bidding product</string>
+    <string name="bidding_value">Bidding value</string>
+    <string name="bidding_done">Bidding done</string>
+    <string name="this_ad_has_been_successfully_outbid_you_can_browse_your_bidding_list">This ad has been successfully outbid, you can browse your bidding list</string>
+    <string name="bidding_list">Bidding list</string>
+    <string name="send_done">Send done</string>
+    <string name="additional_amount">Additional amount</string>
+    <string name="add_extra_amount">Add extra amount</string>
+    <string name="new_item">New item</string>
+    <string name="send_offer">Send offer</string>
+    <string name="choose_items_to_swap">Choose items to swap</string>
+    <string name="notifications">Notifications</string>
+    <string name="seller_profile">Seller profile</string>
+    <string name="active_ads">Active ads</string>
+    <string name="seller_ratings">Seller ratings</string>
+    <string name="bidders">Bidders</string>
+    <string name="bidding_history">Bidding history</string>
+    <string name="offer_details">Offer details</string>
+    <string name="product_required_to_swap">Product required to swap</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="order_proposal">Order proposal</string>
+    <string name="chat">Chat</string>
+    <string name="write_your_message_here">Write your message here...</string>
+    <string name="quantity">Quantity</string>
+    <string name="offered_price">Offered price</string>
+    <string name="from">From</string>
+    <string name="purchase_price_2">Purchase price</string>
+    <string name="cart">Cart</string>
+    <string name="total_before_tax">Total before tax</string>
+    <string name="delivery_fee">Delivery fee</string>
+    <string name="total">Total</string>
+    <string name="hello">Hello</string>
+    <string name="confirm">Confirm</string>
+    <string name="choose_app_language">Choose app language</string>
+    <string name="personal_info">Personal info</string>
+    <string name="acquisition_management">Acquisition management</string>
+    <string name="ratings">Ratings</string>
+    <string name="terms_of_use">Terms of use</string>
+    <string name="language">Language</string>
+    <string name="logout">Logout</string>
+    <string name="update_info">Update info</string>
+    <string name="following_list">Following list</string>
+    <string name="as_buyer">As Buyer</string>
+    <string name="as_seller">As seller</string>
+    <string name="edit">Edit</string>
+    <string name="ads">Ads</string>
+    <string name="orders">Orders</string>
+    <string name="products_filter">Products filter</string>
+    <string name="apply">Apply</string>
+    <string name="bidding_products">Bidding Products</string>
+    <string name="swap_products">Swap Products</string>
+    <string name="products_to_buy">Products to buy</string>
+    <string name="oldest_to_newest">Oldest to Newest</string>
+    <string name="edit_acquisition">Edit Acquisition</string>
+    <string name="lowest_price">Lowest price</string>
+    <string name="minimum_auction">Minimum auction</string>
+    <string name="save">Save</string>
+    <string name="verification_code">Verification code</string>
+    <string name="we_sent_the_verification_code_to_your_mobile_number">We sent the verification code to your mobile number</string>
+    <string name="resend_code">Resend code</string>
+    <string name="a_link_has_been_sent_to_you_to_set_the_password">A link has been sent to you to set the password</string>
+    <string name="skip">Skip</string>
+    <string name="unfortunately_the_limit_is_only_5_images">Unfortunately, the limit is only 5 images.</string>
+    <string name="please_enter_code">Please enter code</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="we_have_sent_the_verification_code_to_your_email">We have sent the verification code to your email</string>
+    <string name="buy_now">Buy now</string>
+    <string name="we_need_storage_permission_to_update_image">We need storage permission to update image</string>
+    <string name="price">Price</string>
+    <string name="note_the_price_does_not_show_to_users">Note: The price does not show to users</string>
+    <string name="release_year">Release year</string>
+    <string name="address">Address</string>
+    <string name="enter_release_year">Enter release year</string>
+    <string name="enter_address">Enter address</string>
+    <string name="sun_section">Sun section</string>
+    <string name="choose_sub_section">Choose sub section</string>
+    <string name="please_select_ad_type">Please select ad type</string>
+    <string name="please_choose_product_status">Please choose product status</string>
+    <string name="please_select_auto_republish_time">Please select auto republish time</string>
+    <string name="please_select_product_section">Please select product section</string>
+    <string name="please_select_product_sub_section">Please select product sub section</string>
+    <string name="please_select_at_lease_one_image_for_ad">Please select at least one image for ad</string>
+    <string name="the_ad_has_been_successfully_added">The ad has been successfully added</string>
+    <string name="lowest_price_for_bidding">Lowest price for bidding</string>
+    <string name="added_successfully">Added successfully</string>
+    <string name="swap_now">Swap now</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="about_us">About us</string>
+    <string name="highest_bid">Highest bid</string>
+
+    <string name="holder_ad_ratings">(%1$s) %2$s rate</string>
+
+    <string name="holder_bidding_count">(%1$s bidding)</string>
+    <string name="swap_product">Swap product</string>
+    <string name="my_orders">Orders</string>
+    <string name="my_ads">My Ads</string>
+    <string name="swap_offers">Swap offers</string>
+    <string name="associations_requests">" Associations' requests"</string>
+    <string name="purchase_offers">Purchase offers</string>
+    <string name="holder_swap_offers">Swap offers (%1$s)</string>
+    <string name="holder_charity_orders">Charity orders (%1$s)</string>
+    <string name="holder_purchase_orders">Here are %1$s purchase orders on this product</string>
+    <string name="holder_charitable_orders">Here are %1$s charitable orders on this product</string>
+    <string name="charity">Charity</string>
+    <string name="there_is_no_products_to_swap_please_add_one">There is no products to swap, please add one</string>
+    <string name="please_select_item_to_swap">Please select item to swap</string>
+    <string name="holder_offer_sentـsuccessfully">Your offer has been successfully sent to %1$s</string>
+    <string name="there_is_no_swap_orders_currently">There is no swap orders currently</string>
+    <string name="please_login_to_continue">Please login to continue</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="hello_guest">Guest</string>
+    <string name="order_product">Order product</string>
+    <string name="no_orders_currently">No orders currently</string>
+    <string name="browse_products_and_order">Browse products and order</string>
+    <string name="there_are_no_ads_to_view">There are no ads to view</string>
+    <string name="sorry_there_are_no_ads_to_view_currently_you_can_add_a_product_now">Sorry، there are no ads to view currently you can add a product now</string>
+    <string name="no_products_avaliable">No products avaliable</string>
+    <string name="accept_highest_bid">Accept highest bid</string>
+    <string name="nobody_has_made_a_bid_yet">Nobody has made a bid yet</string>
+    <string name="accepted_orders">Accepted orders</string>
+    <string name="rejected_order">Rejected order</string>
+    <string name="from_oldest_to_newest">From oldest to newest</string>
+    <string name="rate">Rate</string>
+    <string name="write_your_comment_here">Write your comment here</string>
+    <string name="did_you_like_using_badel_app">Did you like using badel app?</string>
+    <string name="if_you_like_the_app_experience">If you like the app experience you can rate us now to make improvements in the future</string>
+    <string name="you_spoke_to">You spoke to</string>
+    <string name="chats">Chats</string>
+    <string name="swap_list">Swap list</string>
+    <string name="buy_list">Buy list</string>
+    <string name="you_contacted_with_this_user">You contacted with this user on several products, select the product and complete the talk</string>
+    <string name="add_an_amount_to_bid_on_this_ad">Add an amount to bid on this ad, and you will pay this amount to the advertiser if the auction settles on you</string>
+    <string name="holder_all_chats">All chats (%1$s)</string>
+    <string name="holder_client_num">%1$s client</string>
+    <string name="chat_with_seller">Chat with seller</string>
+    <string name="all">All</string>
+    <string name="please_enter_ad_name">Please enter ad name\n</string>
+    <string name="you_don_t_have_any_ratings">You don\'t have any ratings</string>
+    <string name="you_don_t_have_any_reviews_from_anyone">You don\'t have any reviews from anyone.</string>
+    <string name="no_notices">No notices</string>
+    <string name="you_haven_t_received_any_notifications_yet">You haven\'t received any notifications yet</string>
+    <string name="there_are_no_sections_to_view">There are no sections to view</string>
+    <string name="there_are_no_sections_to_display">There are no sections to display, sections will be added later</string>
+    <string name="pending_orders">Pending orders</string>
+    <string name="not_active">Not Active</string>
+    <string name="active">Active</string>
+    <string name="search">Search</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="enable">Enable</string>
+    <string name="no">No</string>
+    <string name="please_enable_gps">Please enable GPS</string>
+    <string name="send_current_location">Send current location</string>
+    <string name="map_api_key" translatable="false">AIzaSyAMCnmVFVR_IfubYkrCrxmynxID_gf1KHk</string>
+    <string name="please_check_location_permission">Please check location permission</string>
+    <string name="choose_location">Choose location</string>
+    <string name="unknown_location">Unknown location</string>
+    <string name="send">Send</string>
+    <string name="yes">Yes</string>
+    <string name="do_you_want_save_address">Do you want save address ?</string>
+    <string name="enter_address_name">Enter address name</string>
+    <string name="enter_product_quantity">Enter product quantity</string>
+    <string name="do_you_want_delete_this_ad">Do you want delete this ad</string>
+    <string name="my_operations">My operations</string>
+    <string name="swap_product_2">Swap product</string>
+    <string name="date">Date</string>
+    <string name="there_are_no_transactions">There are no transactions</string>
+    <string name="my_transactions">My Transactions</string>
+    <string name="from_newest_to_oldest">From newest to oldest</string>
+    <string name="buyer">Buyer</string>
+    <string name="association">Association</string>
+    <string name="swapper">Swapper</string>
+    <string name="bidder">Bidder</string>
+    <string name="you_are_already_use_this_language">You are already use this language</string>
+
+</resources>

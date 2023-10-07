@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:background="@drawable/bg_platinume_border_16r"
+    android:id="@+id/cons_offerProduct"
+    app:layout_constraintTop_toBottomOf="@id/tv_offerDetailsLabel"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="89dp"
+        android:layout_height="73dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img_offerProductImg"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/prod_1"
+        app:shapeAppearanceOverlay="@style/RoundedSquare_16"
+        />
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:visibility="gone"
+        android:background="@drawable/ic_unfav"
+        app:layout_constraintTop_toTopOf="@id/img_offerProductImg"
+        app:layout_constraintEnd_toEndOf="@id/img_offerProductImg"
+        />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/img_offerProductImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_offerProductImg"
+        app:layout_constraintTop_toTopOf="@id/img_offerProductImg">
+
+        <TextView
+            android:id="@+id/tv_productOfferName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="أيفون 13 بروماكس بحالة ممتازة جدا مع كامل الملحقات الاصلية"
+            android:textAppearance="@style/montserrat_regular_13"
+            android:textColor="@color/rich_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_productSectionItem_productImg"
+            app:layout_constraintTop_toTopOf="@id/img_productSectionItem_productImg" />
+
+        <TextView
+            android:id="@+id/tv_tv_productOfferDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="متوفر مع الكارتون والأغراض"
+            android:textAppearance="@style/montserrat_light_12"
+            android:textColor="@color/auro_metal_saurus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_productSectionItem_productName"
+            app:layout_constraintTop_toBottomOf="@id/tv_productSectionItem_productName" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeLayout">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="16dp"
+            android:id="@+id/cons_bidOrdersFrag_content"
+            tools:context=".appFeatures.main.ui.BidOrdersFragment">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_bidOrdersFragment_search"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+
+                android:hint="@string/search_here"
+                android:layout_marginEnd="14dp"
+                android:maxLines="1"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/img_filter"
+                android:background="@drawable/bg_ad_search_edt"
+                android:textAppearance="@style/montserrat_light_14"
+                android:textColor="@color/rich_black"
+                android:textColorHint="@color/auro_metal_saurus"
+                android:paddingStart="12dp"
+                android:paddingEnd="45dp"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/edt_bidOrdersFragment_search"
+                app:layout_constraintEnd_toEndOf="@id/edt_bidOrdersFragment_search"
+                app:layout_constraintBottom_toBottomOf="@id/edt_bidOrdersFragment_search"
+                android:layout_marginEnd="14dp"
+                android:tag="search"
+                android:id="@+id/img_searchAction"
+                android:src="@drawable/ic_search_main_color"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_filter"
+                app:layout_constraintTop_toTopOf="@id/edt_bidOrdersFragment_search"
+                app:layout_constraintBottom_toBottomOf="@id/edt_bidOrdersFragment_search"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/edt_bidOrdersFragment_search"
+                android:src="@drawable/ic_filter"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_listOfBidOrders"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginVertical="12dp"
+                android:paddingTop="12dp"
+                android:clipToPadding="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/list_item_bid_order"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edt_bidOrdersFragment_search"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/layout_empty"
+            layout="@layout/layout_empty_data"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appFeatures.chat.ui.ChatHistoryActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1.8:1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/main_app_color"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:textColor="@color/white"
+        android:id="@+id/tv_youSpokeToLabel"
+        android:textAppearance="@style/montserrat_light_15"
+        android:text="@string/you_spoke_to"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_youSpokeToLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/white"
+        android:id="@+id/tv_clientsNum"
+        android:textAppearance="@style/montserrat_semi_bold_24"
+        tools:text="52 عميل"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_main_bottom_sheet"
+        app:layout_constraintTop_toBottomOf="@id/tv_clientsNum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingHorizontal="8dp"
+            android:clipToPadding="false"
+            android:layout_marginTop="24dp"
+            tools:listitem="@layout/list_item_filter_chat"
+            android:orientation="horizontal"
+            android:id="@+id/rec_chatsFilter"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/rec_chatsFilter"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/rich_black"
+            tools:text="جميع المحادثات ( 7 )"
+            android:id="@+id/tv_allChatsLabel"
+            android:textAppearance="@style/montserrat_semi_bold_14"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_listOfChats"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:clipToPadding="true"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_allChatsLabel"
+            tools:listitem="@layout/list_item_chat_history" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

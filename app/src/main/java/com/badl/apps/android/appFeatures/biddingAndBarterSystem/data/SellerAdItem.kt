@@ -1,0 +1,26 @@
+package com.badl.apps.android.appFeatures.biddingAndBarterSystem.data
+
+data class SellerAdItem(
+    val ad_type_id: Int?,
+    val ad_type_text: String?,
+    val auto_repost_id: Int?,
+    val auto_repost_text: String?,
+    val bids_count: Int?,
+    val description: String?,
+    val end_date: String?,
+    val highest_bid: Int?,
+    val id: Int?,
+    val image: String?,
+    val is_featured: String?,
+    val price: Int?,
+    val product_status_id: Int?,
+    val rate: Double?,
+    val rate_count: Int?,
+    val remaining_days: String?,
+    val status: String?,
+    val title: String?,
+    val user_id: String?,
+    val views: Int?,
+    var is_favorite: Boolean? = false,
+    var is_loading: Boolean? = false,
+)

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="42dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/const_empty_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/ic_empty_ads"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/img_emptyLayout_icon"
+        />
+
+
+        <TextView
+        android:id="@+id/tv_emptyLayout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textAppearance="@style/montserrat_semi_bold_16"
+        tools:text="السلة فارغة"
+        android:lineSpacingExtra="5dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/img_emptyLayout_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_emptyLayout_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="24dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/auro_metal_saurus"
+        android:textAppearance="@style/montserrat_regular_14"
+        tools:text="لم يتم اختيار اي منتجات، تصفح الرئيسية واكتشف المنتجات"
+        app:layout_constraintTop_toBottomOf="@id/tv_emptyLayout_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_emptyLayout_action"
+        style="@style/mainButtonStyle"
+        android:layout_width="225dp"
+        android:layout_marginTop="24dp"
+        tools:text="أضف إعلان"
+        app:layout_constraintEnd_toEndOf="@+id/tv_emptyLayout_msg"
+        app:layout_constraintStart_toStartOf="@+id/tv_emptyLayout_msg"
+        app:layout_constraintTop_toBottomOf="@id/tv_emptyLayout_msg" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

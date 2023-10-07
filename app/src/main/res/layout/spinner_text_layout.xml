@@ -1,0 +1,13 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerItemStyle"
+    android:singleLine="true"
+    android:textColor="@color/black"
+    android:textAppearance="@style/montserrat_light_14"
+    android:gravity="center"
+    tools:text="scfas"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:ellipsize="marquee"
+    android:textAlignment="viewStart" />

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="24dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img_adItem_productImg"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/prod_1"
+        app:shapeAppearanceOverlay="@style/RoundedSquare_16"
+        />
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:id="@+id/tv_adItem_productName"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/montserrat_regular_13"
+        android:textColor="@color/rich_black"
+        android:maxLines="2"
+        android:layout_marginStart="15dp"
+        android:ellipsize="end"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_adItem_productImg"
+        app:layout_constraintStart_toEndOf="@id/img_adItem_productImg"
+        tools:text="أيفون 13 بروماكس بحالة ممتازة جدا مع كامل الملحقات الاصلية"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:id="@+id/tv_adItem_desc"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/montserrat_light_12"
+        android:textColor="@color/auro_metal_saurus"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_adItem_productName"
+        app:layout_constraintStart_toStartOf="@id/tv_adItem_productName"
+        tools:text="مايو 16، 8:00 مساءً"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+
+        android:layout_marginTop="14dp"
+        android:drawablePadding="6dp"
+        android:drawableStart="@drawable/ic_edit_acquisition"
+        app:layout_constraintTop_toBottomOf="@id/tv_adItem_desc"
+        app:layout_constraintStart_toStartOf="@id/tv_adItem_desc"
+        android:textColor="@color/secondary_app_color"
+        android:paddingHorizontal="7dp"
+        android:paddingVertical="6dp"
+        android:background="@drawable/bg_edit_acquis"
+        android:textAppearance="@style/montserrat_regular_13"
+        android:id="@+id/tv_adItem_edit"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delet_icart_item"
+        android:padding="4dp"
+        android:id="@+id/img_deleteItem"
+        app:layout_constraintTop_toTopOf="@id/tv_adItem_edit"
+        app:layout_constraintBottom_toBottomOf="@id/tv_adItem_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

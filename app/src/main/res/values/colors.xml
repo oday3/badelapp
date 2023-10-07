@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_app_color">#282260</color>
+    <color name="main_app_color_5P">#0D282260</color>
+    <color name="secondary_app_color">#74B89F</color>
+    <color name="secondary_app_color_19OP">#3074B89F</color>
+    <color name="secondary_app_color_5P">#0D74B89F</color>
+    <color name="pearl_aqua">#8CD2B8</color>
+    <color name="tufts_blue">#4A90E2</color>
+    <color name="red">#C83131</color>
+    <color name="cg_red">#E23636</color>
+    <color name="cg_red_10OP">#1AE23636</color>
+    <color name="light_red">#EF3D30</color>
+    <color name="orange">#DAAF2F</color>
+    <color name="orange_10OP">#1ADAAF2F</color>
+    <color name="green">#308A20</color>
+    <color name="rich_black">#00051D</color>
+    <color name="auro_metal_saurus">#777A84</color>
+    <color name="quick_silver">#A7A7A7</color>
+    <color name="platinum">#DEE0E8</color>
+    <color name="columbia_blue">#C9D8EC</color>
+    <color name="alice_blue">#F2F8FF</color>
+    <color name="yankees_blue">#1A154A</color>
+    <color name="shadow_blue">#7381A8</color>
+    <color name="yankees_blue_66OP">#A81A154A</color>
+    <color name="light_silver">#D9D9D9</color>
+    <color name="light_silver_60OP">#99D9D9D9</color>
+    <color name="azureish_white">#DFEAFB</color>
+    <color name="cultured">#F5F5F5</color>
+    <color name="ube">#837EB2</color>
+    <color name="platinum_">#E6E6E6</color>
+    <color name="forest_green">#269224</color>
+
+    <!--    <color name="mtrl_textinput_default_box_stroke_color">#fff</color>-->
+</resources>

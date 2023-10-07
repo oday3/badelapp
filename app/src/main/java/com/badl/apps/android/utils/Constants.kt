@@ -1,0 +1,167 @@
+package com.badl.apps.android.utils
+
+object Constants {
+
+    const val APP_LANG = "app_lang"
+    const val  APP_SHARED_PREF_FILE_NAME = "fn_sp_com.eyadty.apps.android"
+    const val  APP_INTRO_FLAG = "app_intro_flag"
+    const val  CURRENT_USER_CART_ID = "current_user_cart_id"
+    const val  CURRENT_USER_CART_COUNT = "current_user_cart_count"
+    const val CURRENT_USER_DATA = "current_user_data"
+    const val DEVICE_FCM_TOKEN = "fcm_token"
+    const val DEVICE_FCM_TOKEN_FAIL = "fcm_token_fail"
+    const val FROM_CATEGORY = "from_category"
+    const val ADDRESS_LAT_COORDINATOR = "address_lat_coordinator"
+    const val ADDRESS_LNG_COORDINATOR = "address_lng_coordinator"
+    const val FROM_SALON = "from_salon"
+    const val FROM_ORDER_DETAILS = "from_order_details"
+    const val FROM_AD_DETAILS = "from_ad_details"
+    const val FROM_HOME_SEARCH = "from_home_search"
+    const val SEARCH_QUERY = "search_query"
+    const val FROM_HOME = "from_home"
+    const val FROM_CATEGORIES = "from_categories"
+    const val FROM_CHARITY_ORDERS = 1
+    const val FROM_BUY_ORDERS = 2
+    const val FROM_TRANSACTION_LIST = "FROM_TRANSACTION_LIST"
+    const val FROM_CHECKOUT = "from_checkout"
+    const val FROM_NOTIFICATIONS = "from_notifications"
+    const val FROM_PRODUCT_SECTION = "from_product_section"
+    const val FROM_BANNER_SECTION = "from_banner_section"
+    const val FROM_STORE_SEARCH = "from_store_search"
+    const val FROM_ARTIST = "from_artist"
+    const val  APP_NOTIFICATIONS_FLAG = "app_notifications_flag"
+    const val  APP_NOTIFICATIONS_COUNT = "app_notifications_count"
+    const val FROM_SECTION = "from_section"
+    const val FROM = "from"
+    const val FIREBASE_KEY = "firebase_key"
+    const val FROM_SUPPORT = "from_support"
+    const val FROM_CHAT = "from_chat"
+    const val IS_ACTIVE = "is_active"
+    const val IS_FREE_SHIPPING = "is_free_shipping"
+    const val IS_CODE_APPLIED = "is_code_applied"
+    const val COUPON_CODE = "coupon_code"
+    const val CODE = "code"
+    const val EMAIL = "email"
+    const val COUPON_CODE_VALUE = "coupon_code_value"
+    const val COUPON_CODE_TYPE = "coupon_code_type"
+    const val MESSAGE = "message"
+    const val ADDRESS_TEXT_ADDRESS = "address_text_address"
+    const val USER_LOCATION = "user_location"
+    const val FILTER_TYPE = "filter_type"
+    const val FILTER_ORDER = "filter_order"
+    const val LOCATION_NAME = "location_name"
+    const val FROM_SHOP = "from_shop"
+    const val FROM_EDIT_LOCATION = "from_edit_location"
+    const val LIST_OF_SERVICES = "list_of_service"
+    const val LIST_OF_SALON_SERVICES = "list_of_salon_service"
+    const val LIST_OF_HOME_SERVICES = "list_of_home_service"
+    const val RESERVATION_SUMMARY_ITEM = "reservation_summary_item"
+    const val RESERVATION_BILL_ITEM = "reservation_bill_item"
+    const val RESULT_DATA = "result_data"
+    const val RETURNED_CODE = "returned_code"
+    const val PRODUCT_LIST_TYPE = "product_list_type"
+    const val FROM_FORGOT_PASS = "from_forgot_pass"
+    const val FROM_REGISTER = "from_register"
+    const val FROM_APP_PRIVACY = "from_app_privacy"
+    const val FROM_SHOW_URL = "from_show_url"
+    const val FROM_SHOW_ALL = "from_show_all"
+    const val FROM_ABOUT_US = "from_about_us"
+    const val FROM_ADD_LOCATION = "from_add_location"
+    const val FROM_TERMS = "from_terms"
+    const val MOBILE_NUM = "mobile_num"
+    const val COUNTRY_PHONE_COED = "country_phone_code"
+    const val USER_TYPE = "user_type"
+    const val USER_ID = "user_id"
+    const val SEND_USER_ID = "send_user_id"
+    const val USER_CURRENT_CART = "user_current_type"
+    const val TOOLBAR_TITLE = "toolbar_title"
+    const val RESERVATION_ID = "reservation_id"
+    const val RECEIVER_IMAGE = "receiver_image"
+    const val TOTAL_PRICE = "total_price"
+    const val SECTION_ID = "section_id"
+    const val OFFER_ID = "offer_id"
+    const val CATEGORY_ID = "category_id"
+    const val ITEMS_ID = "items_id"
+    const val IMAGE_URL = "image_url"
+    const val PAGE_URL = "page_url"
+    const val ORDER_TYPE = "order_type"
+    const val IMAGE_POSITION = "image_position"
+    const val LIST_OF_IMAGES = "list_of_images"
+    const val BEARER = "Bearer "
+    const val SECTION_TYPE = 1
+    const val LIST_TYPE = 2
+    const val FAV_TYPE = 3
+    const val GROUP_TYPE = 4
+    const val CHILD_TYPE = 5
+    const val BILL_TYPE = 6
+    const val PRODUCT_TYPE = 7
+    const val PRODUCT_ID = "product_id"
+    const val ORDER_ID = "order_id"
+    const val OWNER_ID = "owner_id"
+    const val OWNER_PRODUCT_COUNT = "owner_product_count"
+    const val OWNER_IMAGE = "owner_image"
+    const val OWNER_NAME = "owner_name"
+    const val OWNER_TYPE = "owner_type"
+    const val IS_OWNER_ACTIVE = "is_owner_active"
+    const val SECTION_BANNER = "banner"
+    const val SECTION_PRODUCT = "product"
+    const val SECTION_CATEGORY = "category"
+    const val SECTION_ARTIST = "artist"
+    const val SECTION_SALON = "salon"
+    const val SECTION_OFFER = "offer"
+    const val SALON_ID = "salon_id"
+    const val ARTIST_ID = "artist_id"
+    const val AD_ID = "ad_id"
+    const val ITEM_ID = "item_id"
+    const val DATA = "data"
+
+    const val INCREMENT_ACTION = 1
+    const val DECREMENT_ACTION = 2
+    const val SALON_TYPE = 1
+    const val ARTIST_TYPE = 2
+    const val HOME_SEARCH = 10
+    const val STORE_SEARCH = 11
+
+    const val CART_ADD = 201
+    const val CART_DELETE = 202
+    const val CART_REMOVE = 203
+
+    const val TOAST_INFO = 3
+    const val TOAST_DONE = 1
+    const val TOAST_WARNING = 2
+    const val TOAST_ERROR = 0
+
+    const val MESSAGE_TYPE_TXT = "text"
+    const val MESSAGE_TYPE_SENDER_TXT = 111
+    const val MESSAGE_TYPE_RECEIVER_TXT = 112
+
+    const val MESSAGE_TYPE_LOCATION = "location"
+    const val MESSAGE_TYPE_SENDER_LOCATION = 611
+    const val MESSAGE_TYPE_RECEIVER_LOCATION = 612
+
+    const val MESSAGE_TYPE_VOICE = "audio"
+    const val MESSAGE_TYPE_SENDER_VOICE = 311
+    const val MESSAGE_TYPE_RECEIVER_VOICE = 312
+
+    const val MESSAGE_TYPE_IMAGE = "image"
+    const val MESSAGE_TYPE_SENDER_IMAGE = 411
+    const val MESSAGE_TYPE_RECEIVER_IMAGE = 412
+
+    const val MESSAGE_TYPE_DATE = "date"
+    const val MESSAGE_TYPE_DATE_ITEM = 500
+
+
+    const val NOTIFICATION_TYPE_ACTIVATION = "user_activation"
+    const val NOTIFICATION_TYPE_ADMIN = "admin_notification"
+    const val NOTIFICATION_TYPE_RESERVATION_STATUS = "reservation_status"
+    const val NOTIFICATION_TYPE_NEW_MESSAGE= "new_message"
+    const val NOTIFICATION_TYPE_NEW_SUPPORT_MESSAGE= "new_support_message"
+    const val NOTIFICATION_TYPE_OFFER= "offer"
+    const val NOTIFICATION_TYPE_RESERVATION_REMINDER= "reservation_remainder"
+    const val NOTIFICATION_TYPE_USER_DESTROY = "user_destroy"
+    const val NOTIFICATION_TYPE_NEW_AD = "new_ad"
+    const val NOTIFICATION_TYPE_ORDER = "order"
+    const val NOTIFICATION_NEW_MESSAGE = "new_message"
+    const val NOTIFICATION_TYPE_EXTERNAL_LINK = "external_link"
+    const val NOTIFICATION_TYPE_BRAND = "brand"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_notificationImg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/RoundedSquare_8"
+        tools:src="@drawable/ic_unread_notification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_notificationTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:lineSpacingExtra="5dp"
+        tools:text="استبدله النص بإشعار حقيقي"
+        android:textAppearance="@style/montserrat_semi_bold_12"
+        android:textColor="@color/rich_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_notificationImg"
+        app:layout_constraintTop_toTopOf="@id/img_notificationImg" />
+
+
+    <TextView
+        android:id="@+id/tv_notificationMsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="وصف افتراضي لللإشعار"
+        android:lineSpacingExtra="5dp"
+        android:textAppearance="@style/montserrat_regular_12"
+        android:textColor="#595959"
+        app:layout_constraintEnd_toEndOf="@+id/tv_notificationTitle"
+        app:layout_constraintStart_toStartOf="@id/tv_notificationTitle"
+        app:layout_constraintTop_toBottomOf="@id/tv_notificationTitle" />
+
+
+    <View
+        android:id="@+id/view_dash"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_dahs"
+        app:layout_constraintTop_toBottomOf="@id/tv_notificationMsg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

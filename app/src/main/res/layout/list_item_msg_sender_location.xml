@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_msg_receiver_txt"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            android:id="@+id/card_card"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/tv_locationSenderChatItem_map"
+                    android:layout_width="230dp"
+                    android:layout_height="150dp"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:gravity="center_vertical"
+                    android:maxWidth="230dp"
+                    android:clickable="false"
+                    android:maxHeight="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/montserrat_regular_13"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="6dp"
+            android:textColor="@color/white"
+            android:id="@+id/tv_locationSenderChatItem_address"
+            app:layout_constraintTop_toBottomOf="@id/card_card"
+            app:layout_constraintStart_toStartOf="@id/card_card"
+            app:layout_constraintEnd_toEndOf="@id/card_card"
+            tools:text="alkfna;kwnflkawbnfflafnblajwbfjlabjasbfljasalsjbfjlab"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:text="09:02 AM"
+            android:id="@+id/tv_locationSenderChatItem_time"
+            android:textColor="@color/white"
+            android:textAppearance="@style/montserrat_regular_11"
+            app:layout_constraintTop_toBottomOf="@id/tv_locationSenderChatItem_address"
+            app:layout_constraintStart_toStartOf="@id/tv_locationSenderChatItem_address"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

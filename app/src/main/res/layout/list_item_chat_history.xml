@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_chatHistoryItem_userImg"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/RoundedSquare_circle"
+        android:src="@drawable/place_hold_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_chatHistoryItem_userName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        tools:text="اسم المستخدم"
+        android:textAppearance="@style/montserrat_medium_13"
+        android:textColor="@color/rich_black"
+        app:layout_constraintStart_toEndOf="@id/img_chatHistoryItem_userImg"
+        app:layout_constraintTop_toTopOf="@id/img_chatHistoryItem_userImg" />
+
+
+    <TextView
+        android:id="@+id/tv_chatHistoryItem_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="12:00 مساء"
+        android:lineSpacingExtra="5dp"
+        android:textAppearance="@style/montserrat_medium_11"
+        android:textColor="#595959"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_chatHistoryItem_userName"
+        app:layout_constraintTop_toTopOf="@id/tv_chatHistoryItem_userName"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_chatHistoryItem_lastMsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="1"
+        tools:text="تمام اتفقنا انتظرك هنا لا تتأخـ...."
+        android:textAppearance="@style/montserrat_medium_11"
+        android:textColor="#595959"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/img_chatHistoryItem_userImg"
+        app:layout_constraintEnd_toStartOf="@+id/tv_chatHistoryItem_time"
+        app:layout_constraintStart_toStartOf="@id/tv_chatHistoryItem_userName"
+        app:layout_constraintTop_toBottomOf="@id/tv_chatHistoryItem_userName" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/ic_check_double_line"
+        app:layout_constraintEnd_toEndOf="@id/tv_chatHistoryItem_time"
+        app:layout_constraintTop_toTopOf="@id/tv_chatHistoryItem_lastMsg"
+        app:layout_constraintBottom_toBottomOf="@id/tv_chatHistoryItem_lastMsg"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

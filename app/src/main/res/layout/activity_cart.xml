@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appFeatures.cart.ui.CartActivity">
+
+    <include
+        android:id="@+id/toolbar_cartActivity"
+        layout="@layout/toolbar_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_listOfProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="24dp"
+        android:clipToPadding="false"
+        android:layout_marginHorizontal="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/list_item_cart"
+        app:layout_constraintBottom_toTopOf="@id/const_summary"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_cartActivity"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="30dp"
+        android:id="@+id/const_summary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="18dp"
+
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_before_tax"
+                android:id="@+id/tv_totalBeforeTaxLabel"
+                android:textColor="@color/auro_metal_saurus"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textAppearance="@style/montserrat_regular_12"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8,000"
+                android:layout_marginTop="4dp"
+                android:id="@+id/tv_totalBeforeTax"
+                android:textColor="@color/rich_black"
+                app:layout_constraintTop_toTopOf="@id/tv_totalBeforeTaxLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/tv_totalBeforeTaxLabel"
+                android:textAppearance="@style/montserrat_regular_12"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_fee"
+                android:id="@+id/tv_deliveryFeeLabel"
+                android:textColor="@color/auro_metal_saurus"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_totalBeforeTaxLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textAppearance="@style/montserrat_regular_12"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 ريال"
+                android:layout_marginTop="4dp"
+                android:id="@+id/tv_deliveryFee"
+                android:textColor="@color/rich_black"
+                app:layout_constraintTop_toTopOf="@id/tv_deliveryFeeLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/tv_deliveryFeeLabel"
+                android:textAppearance="@style/montserrat_regular_12"
+                />
+
+            <View
+                android:id="@+id/view_dash"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_dahs"
+                app:layout_constraintTop_toBottomOf="@id/tv_deliveryFee" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/linear_totalCost"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/view_dash"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"
+                    android:id="@+id/tv_totalPriceLabel"
+                    android:textColor="@color/auro_metal_saurus"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_totalBeforeTaxLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textAppearance="@style/montserrat_regular_12"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8,500"
+                        android:id="@+id/tv_totalPrice"
+                        android:textColor="@color/rich_black"
+                        app:layout_constraintTop_toBottomOf="@id/tv_totalBeforeTaxLabel"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textAppearance="@style/montserrat_semi_bold_20"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ريال"
+                        android:id="@+id/tv_rial"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/auro_metal_saurus"
+                        app:layout_constraintTop_toBottomOf="@id/tv_totalBeforeTaxLabel"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textAppearance="@style/montserrat_regular_12"
+                        />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_buy"
+                style="@style/mainButtonStyle"
+                android:layout_width="0dp"
+                android:text="اشتري سلعتين"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="70dp"
+                app:layout_constraintTop_toTopOf="@id/linear_totalCost"
+                app:layout_constraintBottom_toBottomOf="@id/linear_totalCost"
+                app:layout_constraintStart_toEndOf="@+id/linear_totalCost"
+                tools:layout_editor_absoluteY="18dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

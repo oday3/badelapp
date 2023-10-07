@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_userImg"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        app:shapeAppearanceOverlay="@style/RoundedSquare_10"
+        android:layout_marginStart="14dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginTop="6dp"
+        tools:text="Marvel Systems"
+        android:textAppearance="@style/montserrat_semi_bold_12"
+        app:layout_constraintStart_toEndOf="@id/img_userImg"
+        app:layout_constraintTop_toTopOf="@id/img_userImg" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="منذ شهرين"
+        android:lineSpacingExtra="5dp"
+        android:textAppearance="@style/montserrat_light_12"
+        android:textColor="@color/auro_metal_saurus"
+        app:layout_constraintStart_toStartOf="@id/tv_userName"
+        app:layout_constraintTop_toBottomOf="@id/tv_userName" />
+
+
+    <TextView
+        android:id="@+id/tv_sellerRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_star_fill"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        tools:text="5.0"
+        android:textAppearance="@style/montserrat_medium_12"
+        android:textColor="@color/rich_black"
+        app:layout_constraintBottom_toBottomOf="@id/tv_userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_userName" />
+
+
+    <TextView
+        android:id="@+id/tv_userComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="4dp"
+        app:layout_constraintEnd_toStartOf="@id/tv_sellerRate"
+        tools:text="كانت تجربة التسوق مع هذا البائع رائعة جدا ومنتج جميل... بواسطة بدل"
+        android:textAppearance="@style/montserrat_regular_13"
+        android:textColor="@color/auro_metal_saurus"
+        app:layout_constraintTop_toBottomOf="@id/img_userImg"
+        app:layout_constraintStart_toStartOf="@id/img_userImg"
+        />
+
+    <View
+        android:id="@+id/view_dash"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_dahs"
+        app:layout_constraintTop_toBottomOf="@id/tv_userComment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

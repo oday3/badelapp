@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appFeatures.userAccount.ui.EditAcquisitionActivity">
+
+    <include
+        android:id="@+id/toolbar_editAcquisition"
+        layout="@layout/toolbar_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_editAcquisition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/main_details"
+                android:id="@+id/tv_mainDetailsLabel"
+                android:textColor="@color/main_app_color"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textAppearance="@style/montserrat_semi_bold_15"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_adStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@id/tv_mainDetailsLabel"
+                app:layout_constraintTop_toTopOf="@id/tv_mainDetailsLabel"
+                android:textAlignment="textEnd"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="3dp"
+                android:drawablePadding="6dp"
+                android:background="@drawable/bg_reject_order"
+                tools:text="طلب مرفوض"
+                android:textAppearance="@style/montserrat_medium_12"
+                android:textColor="@color/red"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_dahs"
+                android:id="@+id/view_mainDetailsSP"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_mainDetailsLabel"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spin_editAd_status"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="14dp"
+                android:background="@android:color/transparent"
+                android:dropDownVerticalOffset="50dp"
+                android:elevation="2dp"
+                app:layout_constraintBottom_toBottomOf="@id/tvin_productStatus"
+                app:layout_constraintEnd_toEndOf="@+id/tvin_productStatus"
+                app:layout_constraintStart_toStartOf="@id/tvin_productStatus"
+                app:layout_constraintTop_toTopOf="@id/tvin_productStatus" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvin_productStatus"
+                style="@style/textInputLayoutStyle"
+                android:layout_marginTop="24dp"
+                android:hint="@string/status"
+                android:layout_width="match_parent"
+                android:nextFocusForward="@id/tvin_password"
+                app:placeholderText="@string/choose_product_status"
+                app:layout_constraintTop_toBottomOf="@id/view_mainDetailsSP"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_productStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textAppearance="@style/montserrat_light_14"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:layout_constraintTop_toTopOf="@id/tvin_productStatus"
+                app:layout_constraintEnd_toEndOf="@id/tvin_productStatus"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/img_chooseProductStatus"
+                android:src="@drawable/arrow_drop_down_fill"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvin_adName"
+                style="@style/textInputLayoutStyle"
+                android:layout_marginTop="16dp"
+                android:hint="@string/ad_name"
+                android:layout_width="match_parent"
+                android:nextFocusForward="@id/tvin_password"
+                app:placeholderText="@string/enter_ad_name"
+                app:layout_constraintTop_toBottomOf="@id/tvin_productStatus"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_adName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/montserrat_light_14"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvin_lowestPrice"
+                style="@style/textInputLayoutStyle"
+                android:layout_marginTop="16dp"
+                android:hint="@string/lowest_price"
+                android:layout_width="match_parent"
+                android:nextFocusForward="@id/tvin_password"
+                app:placeholderText="@string/_1000_sar"
+                app:layout_constraintTop_toBottomOf="@id/tvin_adName"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_lowestPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/montserrat_light_14"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvin_quantity"
+                style="@style/textInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:hint="@string/quantity"
+                android:nextFocusForward="@id/tvin_password"
+                app:layout_constraintTop_toBottomOf="@id/tvin_lowestPrice"
+                app:placeholderText="@string/enter_product_quantity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_productQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textAppearance="@style/montserrat_light_14" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvin_minimumAuction"
+                style="@style/textInputLayoutStyle"
+                android:layout_marginTop="16dp"
+                android:hint="@string/minimum_auction"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:nextFocusForward="@id/tvin_lowestPrice"
+                app:placeholderText="@string/_1000_sar"
+                app:layout_constraintTop_toBottomOf="@id/tvin_quantity"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_minimumAuction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textAppearance="@style/montserrat_light_14"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:layout_constraintTop_toTopOf="@id/tvin_minimumAuction"
+                app:layout_constraintEnd_toEndOf="@id/tvin_minimumAuction"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/img_minimumAuction"
+                android:src="@drawable/arrow_drop_down_fill"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_dahs"
+                android:id="@+id/view_purchasePriceSP"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tvin_minimumAuction"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/duration_of_advertising_days"
+                android:id="@+id/tv_adDurationLabel"
+                app:layout_constraintTop_toBottomOf="@id/view_purchasePriceSP"
+                android:textColor="@color/main_app_color"
+                android:textAppearance="@style/montserrat_semi_bold_15"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/main_app_color"
+                android:text="1"
+                android:id="@+id/tv_adDuration"
+                android:background="@drawable/bg_social_btn_4r"
+                android:gravity="center"
+                android:textAppearance="@style/montserrat_semi_bold_14"
+                app:layout_constraintTop_toBottomOf="@id/tv_adDurationLabel"
+                app:layout_constraintStart_toStartOf="@id/tv_adDurationLabel"
+                />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:progress="1"
+                android:max="15"
+                android:id="@+id/seekbar_adDuration"
+                app:layout_constraintBottom_toBottomOf="@id/tv_adDuration"
+                app:layout_constraintEnd_toEndOf="@+id/view_purchasePriceSP"
+                app:layout_constraintStart_toEndOf="@id/tv_adDuration"
+                app:layout_constraintTop_toTopOf="@id/tv_adDuration" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_dahs"
+                android:id="@+id/view_adDurationSP"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_adDuration"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spin_editAd_autoRepublish"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="14dp"
+                android:background="@android:color/transparent"
+                android:dropDownVerticalOffset="50dp"
+                android:elevation="2dp"
+                app:layout_constraintBottom_toBottomOf="@id/tvin_autoRepublish"
+                app:layout_constraintEnd_toEndOf="@+id/tvin_autoRepublish"
+                app:layout_constraintStart_toStartOf="@id/tvin_autoRepublish"
+                app:layout_constraintTop_toTopOf="@id/tvin_autoRepublish" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvin_autoRepublish"
+                style="@style/textInputLayoutStyle"
+                android:layout_marginTop="24dp"
+                android:hint="@string/auto_republish"
+                android:layout_width="match_parent"
+                android:nextFocusForward="@id/tvin_password"
+                app:placeholderText="@string/choose_the_number_of_auto_republish"
+                app:layout_constraintTop_toBottomOf="@id/view_adDurationSP"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_autoRepublish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textAppearance="@style/montserrat_light_14"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:layout_constraintTop_toTopOf="@id/tvin_autoRepublish"
+                app:layout_constraintEnd_toEndOf="@id/tvin_autoRepublish"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/img_autoRepublish"
+                android:src="@drawable/arrow_drop_down_fill"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spin_editAd_adType"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="14dp"
+                android:background="@android:color/transparent"
+                android:dropDownVerticalOffset="50dp"
+                android:elevation="2dp"
+                app:layout_constraintBottom_toBottomOf="@id/tvin_adType"
+                app:layout_constraintEnd_toEndOf="@+id/tvin_adType"
+                app:layout_constraintStart_toStartOf="@id/tvin_adType"
+                app:layout_constraintTop_toTopOf="@id/tvin_adType" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvin_adType"
+                style="@style/textInputLayoutStyle"
+                android:layout_marginTop="16dp"
+                android:hint="@string/ad_type"
+                android:layout_width="match_parent"
+                android:nextFocusForward="@id/tvin_password"
+                app:placeholderText="@string/choose_ad_type"
+                app:layout_constraintTop_toBottomOf="@id/tvin_autoRepublish"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_adType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textAppearance="@style/montserrat_light_14"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:layout_constraintTop_toTopOf="@id/tvin_adType"
+                app:layout_constraintEnd_toEndOf="@id/tvin_adType"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/img_adType"
+                android:src="@drawable/arrow_drop_down_fill"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/product_details"
+                android:id="@+id/tv_productDetailsLabel"
+                android:textColor="@color/main_app_color"
+                android:textAppearance="@style/montserrat_semi_bold_15"
+                app:layout_constraintTop_toBottomOf="@id/tvin_adType"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_dahs"
+                android:id="@+id/view_productDetailsSP"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_productDetailsLabel"
+                />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spin_editAd_section"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="14dp"
+                android:background="@android:color/transparent"
+                android:dropDownVerticalOffset="50dp"
+                android:elevation="2dp"
+                app:layout_constraintBottom_toBottomOf="@id/tvin_section"
+                app:layout_constraintEnd_toEndOf="@+id/tvin_section"
+                app:layout_constraintStart_toStartOf="@id/tvin_section"
+                app:layout_constraintTop_toTopOf="@id/tvin_section" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvin_section"
+                style="@style/textInputLayoutStyle"
+                android:layout_marginTop="24dp"
+                android:hint="@string/section"
+                android:layout_width="match_parent"
+                android:nextFocusForward="@id/tvin_password"
+                app:placeholderText="@string/choose_section"
+                app:layout_constraintTop_toBottomOf="@id/view_productDetailsSP"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textAppearance="@style/montserrat_light_14"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:layout_constraintTop_toTopOf="@id/tvin_section"
+                app:layout_constraintEnd_toEndOf="@id/tvin_section"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/img_chooseSection"
+                android:src="@drawable/arrow_drop_down_fill"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spin_editAd_subSection"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="14dp"
+                android:background="@android:color/transparent"
+                android:dropDownVerticalOffset="50dp"
+                android:elevation="2dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/tvin_subSection"
+                app:layout_constraintEnd_toEndOf="@id/tvin_subSection"
+                app:layout_constraintStart_toStartOf="@id/tvin_subSection"
+                app:layout_constraintTop_toTopOf="@id/tvin_subSection" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvin_subSection"
+                style="@style/textInputLayoutStyle"
+                android:layout_marginTop="24dp"
+                android:hint="@string/sun_section"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:nextFocusForward="@id/tvin_password"
+                app:placeholderText="@string/choose_sub_section"
+                app:layout_constraintTop_toBottomOf="@id/tvin_section"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_subSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textAppearance="@style/montserrat_light_14"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:layout_constraintTop_toTopOf="@id/tvin_subSection"
+                app:layout_constraintEnd_toEndOf="@id/tvin_subSection"
+                android:layout_marginEnd="12dp"
+                android:visibility="gone"
+                android:id="@+id/img_chooseSubSection"
+                android:src="@drawable/arrow_drop_down_fill"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvin_adDescription"
+                style="@style/textInputLayoutStyle"
+                android:layout_marginTop="24dp"
+                android:hint="@string/description"
+                android:layout_width="match_parent"
+                android:nextFocusForward="@id/tvin_password"
+                app:placeholderText="@string/enter_ad_description"
+                app:layout_constraintTop_toBottomOf="@id/tvin_subSection"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_adDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="4"
+                    android:maxLines="8"
+                    android:gravity="top"
+                    android:paddingTop="20dp"
+                    android:textAppearance="@style/montserrat_light_14"
+                    android:imeOptions="actionNext"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvin_releaseDate"
+                style="@style/textInputLayoutStyle"
+                android:layout_marginTop="24dp"
+                android:hint="@string/release_year"
+                android:layout_width="match_parent"
+                android:nextFocusForward="@id/tvin_password"
+                app:placeholderText="@string/enter_release_year"
+                app:layout_constraintTop_toBottomOf="@id/tvin_adDescription"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_releaseDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:textAppearance="@style/montserrat_light_14"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvin_address"
+                style="@style/textInputLayoutStyle"
+                android:layout_marginTop="24dp"
+                android:hint="@string/address"
+                android:layout_width="match_parent"
+                android:nextFocusForward="@id/tvin_password"
+                app:placeholderText="@string/enter_address"
+                app:layout_constraintTop_toBottomOf="@id/tvin_releaseDate"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:textAppearance="@style/montserrat_light_14"
+                    android:imeOptions="actionNext"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/product_mages"
+                android:id="@+id/tv_productImagesLabel"
+                android:textColor="@color/main_app_color"
+                app:layout_constraintTop_toBottomOf="@id/tvin_address"
+                android:textAppearance="@style/montserrat_semi_bold_15"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_dahs"
+                android:id="@+id/view_productImagesSP"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_productImagesLabel"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/_5_photos_max"
+                android:id="@+id/tv_max5ImagesLabel"
+                android:textColor="@color/auro_metal_saurus"
+                app:layout_constraintTop_toBottomOf="@id/view_productImagesSP"
+                android:textAppearance="@style/montserrat_regular_12"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="156dp"
+                android:layout_height="109dp"
+                android:layout_marginTop="24dp"
+                android:id="@+id/linear_addImage"
+                android:orientation="vertical"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/tv_max5ImagesLabel"
+                app:layout_constraintStart_toStartOf="@id/tv_max5ImagesLabel"
+                android:background="@drawable/bg_green_dahs"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gallery"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/montserrat_semi_bold_12"
+                    android:textColor="@color/rich_black"
+                    android:text="@string/choose_image"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_listOfImages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/linear_addImage"
+                app:layout_constraintTop_toBottomOf="@+id/linear_addImage" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save"
+                style="@style/mainButtonStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:text="@string/save"
+                android:layout_marginTop="42dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintTop_toBottomOf="@id/rec_listOfImages"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
